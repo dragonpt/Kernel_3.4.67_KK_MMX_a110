@@ -12,24 +12,58 @@ BUILD_LK = yes
 BUILD_MTK_SDK = 
 BUILD_PRELOADER = yes
 BUILD_UBOOT = no
-CUSTOM_BUILD_VERNO = s9081_kk alpha
+#
+#Custom Kernel By CM aka superdragonpt@xda
+#KitKat KOT49I Project
+#
+CUSTOM_BUILD_VERNO = mmxa110_kk alpha
 CUSTOM_HAL_ANT = mt6628_ant_m1
 CUSTOM_HAL_BLUETOOTH = bluetooth
 CUSTOM_HAL_CAMERA = camera
 CUSTOM_HAL_CAM_CAL = dummy_eeprom
 CUSTOM_HAL_COMBO = mt6628
 CUSTOM_HAL_EEPROM=m24c08f_eeprom
-
 CUSTOM_HAL_FLASHLIGHT = constant_flashlight
-#CUSTOM_HAL_IMGSENSOR = ov8825_mipi_raw ov8827_mipi_raw hi704_yuv #jb build s9081
-CUSTOM_HAL_IMGSENSOR = ov8825_mipi_raw ov8826_mipi_raw hi704_yuv  #ics build s9081
+#
+#superdragonpt add December 2014
+#
+#There's 3 diff projects here
+#1 Micromax a110 JB out of the box Revision
+#2 Micromax a110 ICS out of the box Revision
+#3 C2 Revision
+#
+#
+#//Choose HAL configs//start\\
+#Camera HAL for JB Revision
+#CUSTOM_HAL_IMGSENSOR = ov8825_mipi_raw ov8827_mipi_raw hi704_yuv
+#Camera HAL for ICS Revision
+#CUSTOM_HAL_IMGSENSOR = ov8825_mipi_raw ov8826_mipi_raw hi704_yuv
+CUSTOM_HAL_IMGSENSOR = ov8825_mipi_raw ov8827_mipi_raw hi704_yuv
+#
+#
+#Camera HAL for JB Revision
+#CUSTOM_KERNEL_IMGSENSOR = ov8825_mipi_raw ov8827_mipi_raw hi704_yuv
+#Camera HAL for ICS Revision
+#CUSTOM_KERNEL_IMGSENSOR = ov8825_mipi_raw ov8826_mipi_raw hi704_yuv
+CUSTOM_KERNEL_IMGSENSOR = ov8825_mipi_raw ov8827_mipi_raw hi704_yuv
+#//Choose HAL configs//end\\
+#
+#
+#//Choose ALSPS configs//start\\
+#For MMX a110 JB and ICS Revisions
+#CUSTOM_KERNEL_ALSPS = cm3607
+#For C2 Revision
+#CUSTOM_KERNEL_ALSPS=cm36283
+CUSTOM_KERNEL_ALSPS = cm3607
+#//Choose ALSPS configs//end\\
+#
+#
 CUSTOM_HAL_LENS = ov8835af dummy_lens
 CUSTOM_HAL_MAIN_IMGSENSOR = ov8825_mipi_raw 
 CUSTOM_HAL_MSENSORLIB = mmc328x akm8975 ami304 bmm050
 CUSTOM_HAL_SENSORS = sensor
 CUSTOM_HAL_SUB_LENS = dummy_lens
 CUSTOM_KERNEL_ACCELEROMETER = bma250_auto bma222E_auto kxtj2_auto
-CUSTOM_KERNEL_ALSPS = cm3607
 CUSTOM_KERNEL_BAROMETER = 
 CUSTOM_KERNEL_BATTERY = battery
 CUSTOM_KERNEL_CAMERA = camera
@@ -40,8 +74,6 @@ CUSTOM_KERNEL_EEPROM = m24c08f_eeprom
 CUSTOM_KERNEL_FLASHLIGHT = constant_flashlight
 CUSTOM_KERNEL_HDMI = 
 CUSTOM_KERNEL_HEADSET = accdet
-#CUSTOM_KERNEL_IMGSENSOR = ov8825_mipi_raw ov8827_mipi_raw hi704_yuv #jb build s9081
-CUSTOM_KERNEL_IMGSENSOR = ov8825_mipi_raw ov8826_mipi_raw hi704_yuv  #ics build s9081
 CUSTOM_KERNEL_KPD = kpd
 CUSTOM_KERNEL_LCM = lt5002f_dsi r61408 nt35510_dsi
 CUSTOM_KERNEL_LEDS = mt65xx
@@ -641,7 +673,10 @@ USE_FRAUNHOFER_AAC = no
 WIFI_WEP_KEY_ID_SET = no
 DUALDB_SUPPORTED_IN_JB = yes
 CONFIG_MTK_USB_UNIQUE_SERIAL = yes
-# Tinno S9081 {
-TINNO_ANDROID_S9081 = yes
+#superdragonpt
+#TODO Micromax a110
+
+# mmxa110 {
+mmxa110 = yes
 # }
 TARGET_BUILD_VARIANT=user
