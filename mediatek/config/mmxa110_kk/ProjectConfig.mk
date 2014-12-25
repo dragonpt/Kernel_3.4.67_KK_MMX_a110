@@ -683,3 +683,6 @@ CONFIG_MTK_USB_UNIQUE_SERIAL = yes
 mmxa110 = yes
 # }
 TARGET_BUILD_VARIANT=user
+
+#Temp Fix to compile Custom headset driver
+TINNO_ANDROID_S9081 = yes
