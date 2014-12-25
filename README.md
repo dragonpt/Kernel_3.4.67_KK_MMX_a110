@@ -27,9 +27,10 @@ cd to root dir
 
 
 
-Visit official thread at XDA: 
+Visit official thread at XDA: http://forum.xda-developers.com/micromax-a110/development/rom-mmx-a110-t2972561
 
 
 Have funn :)
+
 superdragonpt 
 
