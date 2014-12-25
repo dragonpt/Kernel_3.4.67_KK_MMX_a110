@@ -38,14 +38,14 @@ CUSTOM_HAL_FLASHLIGHT = constant_flashlight
 #CUSTOM_HAL_IMGSENSOR = ov8825_mipi_raw ov8827_mipi_raw hi704_yuv
 #Camera HAL for ICS Revision
 #CUSTOM_HAL_IMGSENSOR = ov8825_mipi_raw ov8826_mipi_raw hi704_yuv
-CUSTOM_HAL_IMGSENSOR = ov8825_mipi_raw ov8827_mipi_raw hi704_yuv
+CUSTOM_HAL_IMGSENSOR = ov8825_mipi_raw ov8826_mipi_raw hi704_yuv
 #
 #
 #Camera HAL for JB Revision
 #CUSTOM_KERNEL_IMGSENSOR = ov8825_mipi_raw ov8827_mipi_raw hi704_yuv
 #Camera HAL for ICS Revision
 #CUSTOM_KERNEL_IMGSENSOR = ov8825_mipi_raw ov8826_mipi_raw hi704_yuv
-CUSTOM_KERNEL_IMGSENSOR = ov8825_mipi_raw ov8827_mipi_raw hi704_yuv
+CUSTOM_KERNEL_IMGSENSOR = ov8825_mipi_raw ov8826_mipi_raw hi704_yuv
 #//Choose HAL configs//end\\
 #
 #
@@ -54,7 +54,11 @@ CUSTOM_KERNEL_IMGSENSOR = ov8825_mipi_raw ov8827_mipi_raw hi704_yuv
 #CUSTOM_KERNEL_ALSPS = cm3607
 #For C2 Revision
 #CUSTOM_KERNEL_ALSPS=cm36283
-CUSTOM_KERNEL_ALSPS = cm3607
+#
+#superdragonpt add December 25 2014
+#Auto-Detection of ALSPS, avoiding the compilation of the 3rd HW revision
+CUSTOM_KERNEL_ALSPS = cm3607_auto cm36283_auto
+MTK_AUTO_DETECT_ALSPS = yes
 #//Choose ALSPS configs//end\\
 #
 #
@@ -163,7 +167,6 @@ MTK_AUDIO_RAW_SUPPORT = yes
 MTK_AUTOIP_SUPPORT = no
 MTK_AUTORAMA_SUPPORT = no
 MTK_AUTO_DETECT_ACCELEROMETER = yes
-MTK_AUTO_DETECT_ALSPS = no
 MTK_AUTO_DETECT_MAGNETOMETER = no
 MTK_AUTO_SANITY = yes
 MTK_AVI_PLAYBACK_SUPPORT = yes
