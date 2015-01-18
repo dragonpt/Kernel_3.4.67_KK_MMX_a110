@@ -15,7 +15,7 @@ cd to root dir
 
 
 
-- Run on terminal:   ./mk mmxa100_kk n k
+- Run on terminal:   ./mk mmxa110_kk n k
 
 
 
