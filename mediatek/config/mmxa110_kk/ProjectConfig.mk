@@ -57,7 +57,7 @@ CUSTOM_KERNEL_IMGSENSOR = ov8825_mipi_raw ov8826_mipi_raw hi704_yuv
 #
 #superdragonpt add December 25 2014
 #Auto-Detection of ALSPS, avoiding the compilation of the 3rd HW revision
-CUSTOM_KERNEL_ALSPS = cm3607_auto cm36283_auto
+CUSTOM_KERNEL_ALSPS = cm3607 cm36283
 MTK_AUTO_DETECT_ALSPS = yes
 #//Choose ALSPS configs//end\\
 #
