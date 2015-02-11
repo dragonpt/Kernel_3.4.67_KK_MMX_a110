@@ -63,7 +63,7 @@ MTK_AUTO_DETECT_ALSPS = yes
 #//Choose ALSPS configs//end\\
 #
 #
-CUSTOM_HAL_LENS = ov8835af dummy_lens
+CUSTOM_HAL_LENS = ov8825af dummy_lens
 CUSTOM_HAL_MAIN_IMGSENSOR = ov8825_mipi_raw 
 CUSTOM_HAL_MSENSORLIB = mmc328x akm8975 ami304 bmm050
 CUSTOM_HAL_SENSORS = sensor
